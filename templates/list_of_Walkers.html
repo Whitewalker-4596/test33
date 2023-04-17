@@ -1,0 +1,14 @@
+<div class ="border-bottom row" style="margin:20 auto;padding-bottom:8px ">
+  <div class = "col-10 col-sm-2">
+    <h4><b>{{walker["name"]}}</b></h4>
+    {%if "ability" in walker%}
+    <div>
+      <b>ability :</b> {{walker["ability"]}}
+    </div>
+    {%endif%}  
+    <b>weapon : </b> {{walker["weapon"]}}
+  </div>
+  <div class = "col-10 col-sm-2"  >
+    <button class = "btn btn-outline-primary" style="color:rgb(20,200,0)">Attack</button>
+  </div>
+</div>

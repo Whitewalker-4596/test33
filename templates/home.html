@@ -15,8 +15,8 @@
     
   </head>
   <body>
-    <div>
-      <h1 class = "text-center mt-4 mb-8">WhiteWalker Introduction</h1>
+    <div margin : 0 autocorrect>
+      <h1 class = "text-center mt-4 mb-8">{{owner}} Introduction</h1>
       <img id="banner" 
         class="img-fluid"
         src="https://test33.whitewalker-459.repl.co/static/site_banner.jpeg"
@@ -26,7 +26,11 @@
         Martin introduces the Others in the prologue of A Game of Thrones (1996), describing them as "Tall ... and gaunt and hard as old bones, with flesh pale as milk" with eyes "deeper and bluer than any human eyes, a blue that burned like ice". Accompanied by intense cold, they wear armor that "seemed to change color as it moved", and wield thin crystal swords capable of shattering steel. The Others move silently, and they speak their own language; Martin writes that their voices are "like the cracking of ice on a winter lake".[4] In A Storm of Swords (2000), they are shown to be vulnerable to weapons made of dragonglass (obsidian),[5] as Samwell Tarly kills one this way:
       </p>
       <h2 class = "text-center">List of walkers</h2>
-      <p>Todo give names and an play buttons</p>
+      <div>
+        {%for walker in list_of_walkers%}
+        {%include "list_of_Walkers.html"%}
+        {%endfor%}
+      </div>
       <div>
         <button class = "btn btn-primary btn-lg mt-2 mb-2">Contact us</button>
         <p>Copy Right 2023, Whitewalker</p>
